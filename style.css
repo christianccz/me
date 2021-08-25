@@ -1,0 +1,41 @@
+body {
+  background-color: var(--mq-small, sandybrown) var(--mq-large, mediumslateblue);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --mq-small: /**/ ;
+  }
+}
+@media (max-width: 639.5px) {
+  :root {
+    --mq-large: /**/ ;
+  }
+}
+#app {
+  height: 30vmin;
+  width: 30vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: var(--hover, white) var(--not-hover, midnightblue);
+  color: var(--hover, midnightblue) var(--not-hover, white);
+  border-radius: 1rem;
+}
+#app:not(:hover) {
+  --hover: /**/;
+}
+#app:hover {
+  --not-hover: /**/;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
